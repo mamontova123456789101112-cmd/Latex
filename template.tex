@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage[12pt]{extsizes}
+\usepackage{fancyvrb}
+\usepackage{indentfirst}
+\usepackage[
+  left=2cm, right=2cm, top=2cm, bottom=2cm, headsep=0.2cm, footskip=0.6cm, bindingoffset=0cm
+]{geometry}
+\usepackage[english,russian]{babel}
+
+
+\begin{document}
+\section*{¬ариант 7}
+≈сли требуетс€ улучшить качество переходных процессов при некотором фиксированном  
+\( s = s_0 \), то в этом случае целесообразно выполнить параметрический синтез, т. е. выбор значений параметров обратных св€зей, на основе минимизации функции \( f(p, s_0) \), где  
+
+\[
+f(p, s) = \left( \|R_A(0, p_0, s)\|^{-2} + \|R_A(0, p, s)\|^{-2} \right) \int_{0}^{\infty} f(p, s, \omega) \, d\omega,
+\]
+
+\[
+f(p, s, \omega) = \|R_A(\omega, p, s) - R_A(0, p, s)R_A^*(\omega)\|^2 
++ c_1 \|R'_A(\omega, p, s) - R_A(0, p, s)R_A^{*'}(\omega)\|^2 
++ c_2 \|R''_A(\omega, p, s) - R_A(0, p, s)R_A^{*''}(\omega)\|^2, \quad (') = d()/d\omega,
+\]
+
+\[
+R_{A\nu j}(\omega, p, s) = 
+\begin{cases} 
+	\Re \Phi_{\nu j}(i\omega, p, s), & A_j(p, s) \neq 0, \\ 
+	\sqrt{1 + \omega^2} \;\Re[\Psi_{\nu j}(i\omega, p, s)], & A_j(p, s) = 0,
+\end{cases}
+\]
+\end{document}
+
